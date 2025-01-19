@@ -35,9 +35,9 @@ export function MainNav({ items, children, params: { lang } }: MainNavProps) {
       <Link href={`/${lang}`} className="hidden items-center space-x-2 md:flex">
         <div>
           <Image
-            src="/images/logo.jpg"
-            width="40"
-            height="40"
+            src="logo.svg"
+            width="140"
+            height="140"
             alt=""
           />
         </div>
@@ -47,7 +47,7 @@ export function MainNav({ items, children, params: { lang } }: MainNavProps) {
           {items?.map((item, index) => (
             <Link
               key={index}
-              href={item.disabled ? "#" : `/${lang}${item.href}`}
+              href={item.disabled ? "#" : `/${item.href}`}
               className={cn(
                 "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm",
                 item.href.startsWith(`/${segment}`)

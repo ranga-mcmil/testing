@@ -55,27 +55,16 @@ export function NavBar({
         <div className="flex items-center space-x-3">
             
           {rightElements}
-          <LocaleChange url={"/"} />
-          {!user ? (
-            <Link
-              href={`/${lang}/login`}
-              className={cn(buttonVariants({ variant: "outline", size: "sm" }))}
-            >
-              {typeof marketing.login === "string"
-                ? marketing.login
-                : "Default Login Text"}
-            </Link>
-          ) : null}
+          {/* <LocaleChange url={"/"} /> */}
+          
 
           <Button
             className="px-3"
             variant="default"
             size="sm"
-            onClick={signInModal.onOpen}
+            onClick={() => {}}
           >
-            {typeof marketing.signup === "string"
-              ? marketing.signup
-              : "Default Signup Text"}
+            Sign In
           </Button>
         </div>
       </div>

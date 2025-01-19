@@ -20,8 +20,8 @@
   },
   "marketing": {
     "introducing": "Introducing POS",
-    "title": "Fiscit: Lorem ipsum nova? Simplifica res.",
-    "sub_title": "A system that links your accounting software with Zimra and makes the generation of Fiscal Tax Invoices seamless.",
+    "title": "Fiscit: Your partner in integrations with FDMS",
+    "sub_title": "Fiscit offers different flavours of ficalization solutions that include mobile fiscalization, FAAS, and  fiscalization middleware for your accounting systems.",
     "get_started": "Get Started",
     "view_on_github": "Contact Us",
     "explore_product": "Explore Product",
@@ -52,7 +52,7 @@
     "": ""
   },
   "common": {
-    "copyright": "Copyright © ${currentYear} Nextify Limited. All rights reserved.",
+    "copyright": "Copyright © ${currentYear} Fiscit. All rights reserved.",
     "dashboard": {
       "main_nav_documentation": "Documentation",
       "main_nav_support": "Support",

@@ -34,7 +34,7 @@ export const metadata = {
   },
   description: siteConfig.description,
   keywords: [
-    "Next.js",
+    "fiscalization",
     "Shadcn ui",
     "Sass",
     "Fast ",
