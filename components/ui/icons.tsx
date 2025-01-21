@@ -34,6 +34,8 @@ export const Cluster = Lucide.CloudCog;
 export const Search = Lucide.Search;
 export const Menu = Lucide.Menu;
 export const Phone = Lucide.Phone;
+export const MenuIcon = Lucide.MenuIcon;
+
 
 
 export const System: Icon = (props) => (

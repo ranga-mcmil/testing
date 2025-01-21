@@ -4,24 +4,16 @@ import Image from "next/image";
 import { ModeToggle } from "@/components/mode-toggle";
 import { cn } from "@/lib/utils";
 
-function getCopyrightText(
-  dict: Record<string, string | Record<string, string>>,
-) {
+function getCopyrightText() {
   const currentYear = new Date().getFullYear();
-  const copyrightTemplate = String(dict.copyright);
+  const copyrightTemplate = "Copyright © ${currentYear} Fiscit. All rights reserved.";
   return copyrightTemplate?.replace("${currentYear}", String(currentYear));
 }
 
 export function SiteFooter({
   className,
-  dict,
 }: {
   className?: string;
-  params: {
-    lang: string;
-  };
-
-  dict: Record<string, string | Record<string, string>>;
 }) {
   return (
     <footer className={cn(className)}>
@@ -36,10 +28,10 @@ export function SiteFooter({
             alt=""
           />
           <p className="text-center text-sm leading-loose md:text-left">
-            {getCopyrightText(dict)}
+            {getCopyrightText()}
           </p>
         </div>
-        {/* <ModeToggle /> */}
+        <ModeToggle />
       </div>
     </footer>
   );

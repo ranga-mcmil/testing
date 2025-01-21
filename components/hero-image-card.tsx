@@ -1,8 +1,6 @@
 import Image from 'next/image';
 
-import type { Meteor } from "@/types/meteors";
-
-export function Meteorss({ meteor }: { meteor: Meteor }) {
+export function HeroImageCard() {
   return (
     <div className="w-full">
       <div className="relative w-full">

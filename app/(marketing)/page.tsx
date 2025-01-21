@@ -1,62 +1,21 @@
 import Link from "next/link";
 
 import * as Icons from "@/components/ui/icons";
-import { ComponentProps, ReactNode } from "react";
 import { Comments } from "@/components/comments";
 import { DocumentGuide } from "@/components/document-guide";
-import { FeaturesCard } from "@/components/features-card";
-import { Meteorss } from "@/components/meteors-card";
+import { HeroImageCard } from "@/components/hero-image-card";
 import { Questions } from "@/components/questions";
 import ShimmerButton from "@/components/shimmer-button";
-import { TypewriterEffectSmooths } from "@/components/typewriterEffectSmooth";
 import { WobbleCardShow } from "@/components/wobble";
 import { WordReveal } from "@/components/word-reveal";
-import type { Locale } from "@/config/i18n-config";
-import { getDictionary } from "@/lib/get-dictionary";
-import type { Meteor } from "@/types/meteors";
-import styles from "./page.module.css";
-import clsx from "clsx";
-// import { Container } from "@/components/Container";
-// import { Container } from "@/primitives/Container";
-import { Container } from "@/components/Container/index";
+
 import { cn } from "@/lib/utils";
 
-
-
-
-
-
-const meteors_data: Meteor = {
-  name: "Let’s Chat on WhatsApp",
-  description:
-    "Connect with our team on WhatsApp to discuss fiscalization solutions, get support, and stay updated.",
-  button_content: "Chat with us",
-  url: "https://discord.gg/8SwSX43wnD",
+export const metadata = {
+  title: "Home",
 };
 
-
-interface FeatureProps extends Omit<ComponentProps<"div">, "title"> {
-  description: ReactNode;
-  title: ReactNode;
-}
-
-function Feature({ title, description, className, ...props }: FeatureProps) {
-  return (
-    <div className={clsx(className, styles.featuresFeature)} {...props}>
-      <h4 className={styles.featuresFeatureTitle}>{title}</h4>
-      <p className={styles.featuresFeatureDescription}>{description}</p>
-    </div>
-  );
-}
-
-export default async function IndexPage({
-  params: { lang },
-}: {
-  params: {
-    lang: Locale;
-  };
-}) {
-  const dict = await getDictionary(lang);
+export default async function IndexPage() {
 
   return (
     <>
@@ -64,32 +23,29 @@ export default async function IndexPage({
         <div className="grid grid-cols-1 gap-10 pb-10 md:pb-40 xl:grid-cols-2">
           <div className="flex flex-col items-start">
             <div className="flex flex-col pt-4 md:pt-28 lg:pt-28 xl:pt-28">
-              <Link href="" target="_blank">
+              <Link href="/" target="_blank">
                 <DocumentGuide>
-                  {dict.marketing.introducing || "Introducing Saasfly"}
+                  Introducing POS
                 </DocumentGuide>
               </Link>
 
               <div className="mt-6">
                 <h1 className="relative mb-6 max-w-4xl text-left text-4xl font-bold dark:text-zinc-100 sm:text-7xl md:text-7xl xl:text-7xl">
-                  {dict.marketing.title ||
-                    "Saasfly: A new SaaS player? Make things easier."}
+                  Fiscit: Your partner in integrations with FDMS
                 </h1>
               </div>
 
               <div>
                 <span className="text-zinc-500 sm:text-xl">
-                  {dict.marketing.sub_title ||
-                    "Your complete All-in-One solution for building SaaS services."}
+                  Fiscit offers different flavours of ficalization solutions that include mobile fiscalization, FAAS, and  fiscalization middleware for your accounting systems.
                 </span>
-                {/* <TypewriterEffectSmooths /> */}
               </div>
 
               <div className="mb-4 mt-6 flex w-full flex-col justify-center space-y-4 sm:flex-row sm:justify-start sm:space-x-8 sm:space-y-0">
                 <Link href={`/`}>
                   <ShimmerButton className="mx-auto flex justify-center">
                     <span className="z-10 w-48 whitespace-pre bg-gradient-to-b from-black from-30% to-gray-300/80 bg-clip-text text-center text-sm font-semibold leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 dark:text-transparent">
-                      {dict.marketing.get_started}
+                      Get Started
                     </span>
                   </ShimmerButton>
                 </Link>
@@ -98,7 +54,7 @@ export default async function IndexPage({
                   <div className="flex h-full items-center justify-center">
                     <Icons.Phone className="mr-2 h-6 w-6" />
                     <span className="text-base font-semibold">
-                      {dict.marketing.view_on_github || "View on GitHub"}
+                      Contact Us
                     </span>
                   </div>
                 </Link>
@@ -108,10 +64,7 @@ export default async function IndexPage({
 
           <div className="hidden h-full w-full xl:block">
             <div className="flex flex-col pt-28 h-[100vh]">
-
-              <Meteorss meteor={meteors_data} />
-
-
+              <HeroImageCard />
             </div>
           </div>
         </div>

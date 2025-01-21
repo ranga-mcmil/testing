@@ -2,6 +2,7 @@ import * as React from "react";
 import Link from "next/link";
 
 import * as Icons from "@/components/ui/icons";
+import Image from "next/image";
 
 
 import { siteConfig } from "@/config/site";
@@ -25,8 +26,14 @@ export function MobileNav({ items, children, menuItemClick }: MobileNavProps) {
     >
       <div className="relative z-20 grid gap-6 rounded-md bg-popover p-4 text-popover-foreground shadow-md">
         <Link href="/" className="flex items-center space-x-2">
-          <Icons.Logo />
-          <span className="font-bold">{siteConfig.name}</span>
+          {/* <Icons.Logo /> */}
+          <Image
+            src="logo.svg"
+            width="100"
+            height="100"
+            alt=""
+          />
+          {/* <span className="font-bold">{siteConfig.name}</span> */}
         </Link>
         <nav className="grid grid-flow-row auto-rows-max text-sm">
           {items.map((item, index) => (

@@ -4,7 +4,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 import { ThemeProvider } from "@/components/theme-provider";
-import { i18n } from "@/config/i18n-config";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
@@ -22,10 +21,6 @@ const fontHeading = localFont({
   src: "../styles/fonts/CalSans-SemiBold.woff2",
   variable: "--font-heading",
 });
-
-export function generateStaticParams() {
-  return i18n.locales.map((locale) => ({ lang: locale }));
-}
 
 export const metadata = {
   title: {
@@ -57,11 +52,11 @@ export const metadata = {
     siteName: siteConfig.name,
   },
   icons: {
-    icon: "/logo.svg",
+    icon: "/logo-small.svg",
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
-  metadataBase: new URL("https://show.saasfly.io/"),
+  metadataBase: new URL("https://goofl.com"),
   // manifest: `${siteConfig.url}/site.webmanifest`,
 };
 
@@ -85,7 +80,7 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="dark" // Set light as the default theme
           enableSystem={false}
         >
           {children}

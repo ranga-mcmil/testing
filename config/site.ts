@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "Fiscit",
-  description: "",
-  url: "https://fiscitzw.com",
+  name: "Saasfly",
+  description: "We provide an easier way to build saas service in production",
+  url: "https://github.com/saasfly/saasfly",
   ogImage: "",
   links: {
-    github: "https://fiscitzw.com",
+    github: "https://github.com/saasfly/saasfly",
   },
 };
