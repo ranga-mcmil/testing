@@ -3,9 +3,7 @@
 import useScroll from "@/hooks/use-scroll";
 import type { MainNavItem } from "@/types";
 import { MainNav } from "./main-nav";
-import { Button, buttonVariants } from "./ui/button";
-
-type Dictionary = Record<string, string>;
+import { Button } from "./ui/button";
 
 interface NavBarProps {
   items?: MainNavItem[];

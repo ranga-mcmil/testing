@@ -1,4 +1,8 @@
-// Core component that receives mouse positions and renders pointer and content
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+// your file content here
+
+/* eslint-enable @typescript-eslint/no-explicit-any */
 "use client";
 
 import React, { useEffect, useState } from "react";
