@@ -24,20 +24,14 @@ const reviews = [
   {
     name: "王伟",
     username: "@wangwei",
-    body: "这款 SaaS 服务简直是办公利器！我的工作效率提高了很多。",
+    body: "I've never seen anything like this before. It's amazing. I love it.",
     img: "https://avatar.vercel.sh/jane",
   },
   {
     name: "김민수",
     username: "@kios",
-    body: "저는 이 SaaS 서비스에 매우 만족하고 있습니다.",
+    body: "I've never seen anything like this before. It's amazing. I love it.",
     img: "https://avatar.vercel.sh/jenny",
-  },
-  {
-    name: "山田太郎",
-    username: "@samtimkun",
-    body: "このSaaSサービスには本当に感謝しています。",
-    img: "https://avatar.vercel.sh/james",
   },
 ];
 
