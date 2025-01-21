@@ -8,10 +8,6 @@ import { Questions } from "@/components/questions";
 import ShimmerButton from "@/components/shimmer-button";
 import { WobbleCardShow } from "@/components/wobble";
 import { WordReveal } from "@/components/word-reveal";
-import { ComponentIcon, Users } from "lucide-react";
-
-
-import { cn } from "@/lib/utils";
 import { FeatureGrid } from "@/components/features";
 
 export const metadata = {
@@ -140,8 +136,8 @@ export default async function IndexPage() {
                         y2="208"
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         strokeWidth="22"
                       ></line>
                       <line
@@ -151,8 +147,8 @@ export default async function IndexPage() {
                         y2="192"
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         strokeWidth="22"
                       ></line>
                     </svg>
