@@ -1,11 +1,8 @@
 import * as React from "react";
 import Link from "next/link";
 
-import * as Icons from "@/components/ui/icons";
 import Image from "next/image";
 
-
-import { siteConfig } from "@/config/site";
 import { useLockBody } from "@/hooks/use-lock-body";
 import type { MainNavItem } from "@/types";
 import { cn } from "@/lib/utils";

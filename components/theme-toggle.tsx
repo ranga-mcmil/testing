@@ -3,14 +3,9 @@
 import * as React from "react";
 import { useTheme } from "next-themes";
 
-import { Button } from "@/packages/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/packages/ui/dropdown-menu";
 import * as Icons from "@/components/ui/icons";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { Button } from "./ui/button";
 
 export default function ThemeToggle(props: {
   align?: "center" | "start" | "end";

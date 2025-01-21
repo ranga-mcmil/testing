@@ -1,5 +1,6 @@
 import { cn } from "./ui";
 import Marquee from "./ui/marquee";
+import Image from 'next/image';
 
 
 const reviews = [
@@ -24,20 +25,14 @@ const reviews = [
   {
     name: "王伟",
     username: "@wangwei",
-    body: "这款 SaaS 服务简直是办公利器！我的工作效率提高了很多。",
+    body: "I've never seen anything like this before. It's amazing. I love it.",
     img: "https://avatar.vercel.sh/jane",
   },
   {
     name: "김민수",
     username: "@kios",
-    body: "저는 이 SaaS 서비스에 매우 만족하고 있습니다.",
+    body: "I've never seen anything like this before. It's amazing. I love it.",
     img: "https://avatar.vercel.sh/jenny",
-  },
-  {
-    name: "山田太郎",
-    username: "@samtimkun",
-    body: "このSaaSサービスには本当に感謝しています。",
-    img: "https://avatar.vercel.sh/james",
   },
 ];
 
@@ -66,7 +61,7 @@ const ReviewCard = ({
       )}
     >
       <div className="flex flex-row items-center gap-2">
-        <img className="rounded-full" width="32" height="32" alt="" src={img} />
+        <Image className="rounded-full" width="32" height="32" alt="" src={img} />
         <div className="flex flex-col">
           <figcaption className="text-sm font-medium dark:text-white">
             {name}

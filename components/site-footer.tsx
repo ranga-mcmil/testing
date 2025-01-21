@@ -1,7 +1,6 @@
 import * as React from "react";
 import Image from "next/image";
 
-import { ModeToggle } from "@/components/mode-toggle";
 import { cn } from "@/lib/utils";
 
 function getCopyrightText() {
@@ -31,7 +30,7 @@ export function SiteFooter({
             {getCopyrightText()}
           </p>
         </div>
-        <ModeToggle />
+        {/* <ModeToggle /> */}
       </div>
     </footer>
   );

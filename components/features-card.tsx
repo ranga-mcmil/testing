@@ -1,7 +1,10 @@
 "use client";
 
-import { cn } from "@/packages/ui";
-import { AnimatedList } from "@/packages/ui/animated-list";
+import { cn } from "@/lib/utils";
+import { AnimatedList } from "./ui/animated-list";
+
+// import { cn } from "@/packages/ui";
+// import { AnimatedList } from "@/packages/ui/animated-list";
 
 interface Item {
   name: string;

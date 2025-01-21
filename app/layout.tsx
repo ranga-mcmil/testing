@@ -6,10 +6,6 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
-import { Toaster } from "@/components/ui/toaster";
-
-// import { Suspense } from "react";
-// import { PostHogPageview } from "~/config/providers";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -29,20 +25,14 @@ export const metadata = {
   },
   description: siteConfig.description,
   keywords: [
-    "fiscalization",
-    "Shadcn ui",
-    "Sass",
-    "Fast ",
-    "Simple ",
-    "Easy",
-    "Cloud Native",
+    ""
   ],
   authors: [
     {
-      name: "saasfly",
+      name: "Ranga McMil",
     },
   ],
-  creator: "Saasfly",
+  creator: "Ranga McMil",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -53,8 +43,8 @@ export const metadata = {
   },
   icons: {
     icon: "/logo-small.svg",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    shortcut: "/logo-small.svg",
+    apple: "/logo-small.svg",
   },
   metadataBase: new URL("https://goofl.com"),
   // manifest: `${siteConfig.url}/site.webmanifest`,
@@ -68,9 +58,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      {/*<Suspense>*/}
-      {/*  <PostHogPageview />*/}
-      {/*</Suspense>*/}
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
@@ -80,12 +67,11 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark" // Set light as the default theme
+          defaultTheme="light" // Set light as the default theme
           enableSystem={false}
         >
           {children}
           
-          <Toaster />
         </ThemeProvider>
       </body>
     </html>
