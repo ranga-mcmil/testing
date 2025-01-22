@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-// import { toast } from "@/components/ui/use-toast"
+import { toast } from "@/hooks/use-toast"
 
 type FormData = {
   name: string
@@ -29,10 +29,10 @@ export default function ContactForm() {
     await new Promise((resolve) => setTimeout(resolve, 1000))
     console.log(data)
     setIsSubmitting(false)
-    // toast({
-    //   title: "Form submitted!",
-    //   description: "We've received your message and will get back to you soon.",
-    // })
+    toast({
+      title: "Form submitted!",
+      description: "We've received your message and will get back to you soon.",
+    })
     reset()
   }
 
