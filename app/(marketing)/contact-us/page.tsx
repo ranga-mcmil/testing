@@ -33,16 +33,17 @@ export default async function PricingPage() {
             </div>
           </div>
 
-          <div className="h-full w-full xl:block">
-            <div className="flex flex-col  h-[100vh]">
+          <div className="h-full w-full">
+            <div className="flex flex-col">
 
               <div className="w-full">
-                <div className="relative w-full">
-                  <div className="absolute inset-0 h-full w-full scale-[0.80] transform rounded-full blur-3xl" />
-                  <div className="relative flex h-full flex-col items-start justify-end overflow-hidden rounded-2xl border border-gray-800 shadow-xl dark:bg-gray-900 dark:bg-opacity-70">
+                <div className="relative overflow-hidden rounded-lg rounded-2xl border border-gray-800 bg-background p-2">
+                  <div className="flex flex-col rounded-md p-6 gap-4">
                     <ContactForm />
+
                   </div>
                 </div>
+                
               </div>
 
             </div>
