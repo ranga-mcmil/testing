@@ -44,26 +44,26 @@ export function MainNav({ children }: MainNavProps) {
         <div>
           <Image
             src="logo.svg"
-            width="140"
-            height="140"
+            width="200"
+            height="200"
             alt=""
           />
         </div>
       </Link>
       <nav className="hidden gap-6 md:flex">
         {items?.map((item, index) => (
-          <Link
+            <Link
             key={index}
             href={`${item.href}`}
             className={cn(
-              "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm",
-              item.href.startsWith(`/${segment}`)
-                ? "text-foreground"
-                : "text-foreground/60"
+              "flex items-center text-lg font-medium transition-colors hover:text-[#169d52]/80 sm:text-sm",
+              (segment === null && item.href === '/') || item.href.startsWith(`/${segment}`)
+              ? "text-foreground text-[#169d52]"
+              : "text-foreground/60"
             )}
-          >
+            >
             {item.title}
-          </Link>
+            </Link>
         ))}
       </nav>
       <button

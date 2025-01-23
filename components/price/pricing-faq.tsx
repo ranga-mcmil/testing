@@ -6,40 +6,28 @@ export function PricingFaq() {
   const pricingFaqData = [
     {
       id: "item-1",
-      question: "What is the cost of the free plan?",
+      question: "Do you charge for a demo?",
       answer:
-        "Our free plan is completely free, with no monthly or annual charges. It's a great way to get started and explore our basic features.",
+        "No, we do not charge for a demo just book an appointment with us info@fiscit.co.zw",
     },
     {
       id: "item-2",
-      question: "How much does the Pro Monthly plan cost?",
+      question: "Are there any set up costs?",
       answer:
-        "The Pro Monthly plan is priced at $30 per month. It provides access to our core features and is billed on a monthly basis.",
+        "Yes, when we initially set up your system to communicate with our middleware.\nYes, when we set up an account on our FAAS (web portal).",
     },
     {
       id: "item-3",
-      question: "What is the price of the Business Monthly plan?",
+      question: "Do you charge a monthly fee?",
       answer:
-        "The Business Monthly plan is available for $60 per month. It offers advanced features and is billed on a monthly basis for added flexibility.",
-    },
-    {
-      id: "item-4",
-      question: "Do you offer any annual subscription plans?",
-      answer:
-        "Yes, we offer annual subscription plans for even more savings. The Pro Annual plan is $288 per year, and the Business Annual plan is $600 per year.",
-    },
-    {
-      id: "item-5",
-      question: "Is there a trial period for the paid plans?",
-      answer:
-        "We offer a 14-day free trial for both the Pro Monthly and Pro Annual plans. It's a great way to experience all the features before committing to a paid subscription.",
+        "Yes, we charge a monthly support and maintenance fee, that can be paid quarterly (every 3 months), semi-annually (6 months) or annually (12 months).",
     },
   ];
 
   return (
     <section className="container max-w-3xl py-2">
       <div className="mb-14 space-y-6 text-center">
-        <h1 className="font-heading text-center text-3xl md:text-5xl">
+        <h1 className="font-heading text-center text-3xl md:text-5xl" style={{ color: "#1a3652" }}>
           <Balancer>Frequently Asked Questions</Balancer>
         </h1>
         <p className="text-md text-muted-foreground">
