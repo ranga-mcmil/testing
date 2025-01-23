@@ -5,32 +5,26 @@ import Image from 'next/image';
 
 const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
+    name: "Tafara Mutembedza",
+    username: "@tafara",
+    body: "Fiscit made our compliance with Zimbabwe's fiscalization regulations a breeze. Their expert guidance and reliable solutions saved us time and headaches.",
     img: "https://avatar.vercel.sh/jack",
   },
   {
-    name: "Alex",
-    username: "@alex",
-    body: "This tool has revolutionized the way our team works.",
+    name: "Tapiwa",
+    username: "@tapiwa",
+    body: "We were struggling to understand the complexities of fiscalization. Fiscit provided clear explanations and tailored solutions that perfectly fit our business needs.",
     img: "https://avatar.vercel.sh/jill",
   },
   {
-    name: "Shamoki",
-    username: "@shamoki",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    name: "Kudakwashe",
+    username: "@kudakwashe",
+    body: "Fiscit's customer support is exceptional. They are always available to answer our questions and provide prompt assistance whenever we need it.",
     img: "https://avatar.vercel.sh/john",
   },
   {
-    name: "王伟",
-    username: "@wangwei",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jane",
-  },
-  {
-    name: "김민수",
-    username: "@kios",
+    name: "Tapiwa",
+    username: "@tapiwa",
     body: "I've never seen anything like this before. It's amazing. I love it.",
     img: "https://avatar.vercel.sh/jenny",
   },
@@ -42,12 +36,10 @@ const secondRow = reviews.slice(reviews.length / 2);
 const ReviewCard = ({
   img,
   name,
-  username,
   body,
 }: {
   img: string;
   name: string;
-  username: string;
   body: string;
 }) => {
   return (
@@ -66,7 +58,7 @@ const ReviewCard = ({
           <figcaption className="text-sm font-medium dark:text-white">
             {name}
           </figcaption>
-          <p className="text-xs font-medium dark:text-white/40">{username}</p>
+          {/* <p className="text-xs font-medium dark:text-white/40">{username}</p> */}
         </div>
       </div>
       <blockquote className="mt-2 text-sm">{body}</blockquote>

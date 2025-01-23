@@ -78,7 +78,7 @@ export default function ContactForm() {
         {errors.message && <p className="mt-1 text-sm text-red-600">{errors.message.message}</p>}
       </div>
 
-      <Button type="submit" disabled={isSubmitting}>
+      <Button type="submit" disabled={isSubmitting} style={{ backgroundColor: "#169d52" }}>
         {isSubmitting ? "Sending..." : "Send Message"}
       </Button>
     </form>

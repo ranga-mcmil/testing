@@ -39,7 +39,7 @@ export function NavBar({
 
           <Button
             className="px-3"
-            variant="default"
+            variant="green"
             size="sm"
             onClick={() => {}}
           >

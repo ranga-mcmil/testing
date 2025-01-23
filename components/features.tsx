@@ -4,13 +4,13 @@ export function FeatureGridItem(props: {
   description: string;
 }) {
   return (
-    <div className="relative overflow-hidden rounded-lg rounded-2xl border border-gray-800 bg-background p-2">
+    <div className="relative overflow-hidden rounded-lg rounded-2xl border border-[#1a3652] bg-background p-2">
       <div className="flex h-[250px] flex-col rounded-md p-6 gap-4">
-        {props.icon}
-        <div className="space-y-2">
-          <h3 className="font-bold">{props.title}</h3>
-          <p className="text-sm text-muted-foreground">{props.description}</p>
-        </div>
+      {props.icon}
+      <div className="space-y-2">
+        <h3 className="font-bold text-[#1a3652]">{props.title}</h3>
+        <p className="text-sm text-[#1a3652]">{props.description}</p>
+      </div>
       </div>
     </div>
   );
